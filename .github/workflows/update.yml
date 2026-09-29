@@ -1,8 +1,6 @@
 name: Update XMLTV
 
 on:
-  schedule:
-    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 jobs:
@@ -15,6 +13,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
       - name: Run merge script
         run: python merge.py
