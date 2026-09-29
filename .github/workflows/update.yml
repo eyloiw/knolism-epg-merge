@@ -1,7 +1,7 @@
 name: Update XMLTV
 
 permissions:
-contents: write
+  contents: write
 
 on:
   workflow_dispatch:
