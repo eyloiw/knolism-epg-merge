@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 
 urls = [
     "https://raw.githubusercontent.com/Animenosekai/japanterebi-xmltv/main/guide.xml",
-    "https://raw.githubusercontent.com/karenda-jp/etc/main/guides.xml"
+    "https://github.com/karenda-jp/etc/blob/main/guides.xml"
 ]
 
 tv_root = ET.Element("tv")
